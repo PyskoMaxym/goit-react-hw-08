@@ -1,0 +1,15 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 24px;
+    align-items: center;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 4px;
+    width: 250px;
+}
+.label {
+    display: flex;
+    flex-direction: column;
+}
