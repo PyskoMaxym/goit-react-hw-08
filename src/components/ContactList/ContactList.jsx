@@ -7,6 +7,8 @@ import { Box, Typography } from "@mui/material";
 const ContactList = () => {
   const contacts = useSelector(selectFilteredContacts);
 
+  console.log(contacts);
+
   return (
     <Box sx={{ mt: 2 }}>
       {contacts.length === 0 ? (
