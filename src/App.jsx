@@ -39,7 +39,7 @@ const App = () => {
       <CircularProgress />
     </div>
   ) : (
-    <Layout>
+    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -71,7 +71,7 @@ const App = () => {
         </Route>
       </Routes>
       <Toaster position="top-right" reverseOrder={false} />
-    </Layout>
+    </>
   );
 };
 
