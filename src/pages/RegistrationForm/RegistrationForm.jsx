@@ -10,7 +10,7 @@ const validationSchema = Yup.object({
   password: Yup.string().min(6, "Too short").required("Required to fill"),
 });
 
-const RegisterPage = () => {
+const RegistrationForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = async (values, { resetForm }) => {
@@ -99,4 +99,4 @@ const RegisterPage = () => {
   );
 };
 
-export default RegisterPage;
+export default RegistrationForm;

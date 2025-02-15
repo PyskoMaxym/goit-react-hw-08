@@ -10,7 +10,7 @@ const validationSchema = Yup.object({
   password: Yup.string().min(6, "Too short").required("Required to fill"),
 });
 
-const LoginPage = () => {
+const LoginForm = () => {
     const dispatch = useDispatch();
 
     const handleSubmit = async (values, {resetForm}) =>{
@@ -89,4 +89,4 @@ return (
 
 }
 
-export default LoginPage;
+export default LoginForm;

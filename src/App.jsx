@@ -15,8 +15,8 @@ import RestrictedRoute from "./routes/RestrictedRoute";
 import CircularProgress from "@mui/material/CircularProgress";
 
 const HomePage = lazy(()=> import('./pages/HomePage/HomePage'));
-const RegisterPage = lazy(()=> import('./pages/RegisterPage/RegisterPage'));
-const LoginPage = lazy (()=> import('./pages/LoginPage/LoginPage'));
+const RegistrationForm = lazy(()=> import('./pages/RegistrationForm/RegistrationForm'));
+const LoginForm = lazy (()=> import('./pages/LoginForm/LoginForm'));
 const NotFoundPage = lazy (()=> import ('./pages/NotFoundPage/NotFoundPage'));
 const ContactsPage = lazy (()=> import('./pages/ContactsPage/ContactsPage'));
 
@@ -47,7 +47,7 @@ const App = () => {
             path="register"
             element={
               <RestrictedRoute>
-                <RegisterPage />
+                <RegistrationForm />
               </RestrictedRoute>
             }
           />
@@ -55,7 +55,7 @@ const App = () => {
             path="login"
             element={
               <RestrictedRoute>
-                <LoginPage />
+                <LoginForm />
               </RestrictedRoute>
             }
           />
